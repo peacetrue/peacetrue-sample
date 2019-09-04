@@ -1,0 +1,6 @@
+name: peacetrue-template-model-project
+title: 模型项目模板
+version: master
+start_page: introduction.adoc
+nav:
+  - modules/ROOT/nav.adoc
