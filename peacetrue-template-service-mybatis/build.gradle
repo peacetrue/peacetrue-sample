@@ -13,6 +13,8 @@ artifacts {
     testArtifacts testJar
 }
 
+jar.dependsOn.add(testJar)
+
 dependencies {
 
     api project(":peacetrue-template-service-api")
@@ -26,6 +28,7 @@ dependencies {
     implementation 'com.github.peacetrue:peacetrue-associate'
     implementation 'org.springframework.data:spring-data-commons'
     implementation "org.springframework.boot:spring-boot-autoconfigure"
+    implementation "javax.annotation:javax.annotation-api"
     compileOnly "org.springframework.boot:spring-boot-configuration-processor"
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
