@@ -1,4 +1,4 @@
-rootProject.name = 'peacetrue-template-model-project'
+rootProject.name = 'peacetrue-sample'
 include 'peacetrue-template-service-api'
 include 'peacetrue-template-service-mybatis'
 include 'peacetrue-template-controller'

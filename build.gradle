@@ -3,17 +3,34 @@ plugins {
     id "maven-publish"
     id "signing"
     id "idea"
-    id "org.springframework.boot" version "1.5.20.RELEASE" apply(false)
+    id("io.spring.dependency-management") version "1.0.8.RELEASE"
 }
 
-allprojects {
+allprojects { project ->
+
+    group "com.github.peacetrue.sample"
+    version "1.0-SNAPSHOT"
+    description "模型项目模板"
+
+    apply plugin: "java"
+    apply plugin: "java-library"
+    sourceCompatibility = 1.8
+
+    apply plugin: "idea"
+    idea {
+        module {
+            inheritOutputDirs = false
+            outputDir = tasks.compileJava.destinationDir
+            testOutputDir = tasks.compileTestJava.destinationDir
+            downloadSources = true
+            downloadJavadoc = false
+        }
+    }
+
     repositories {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         mavenCentral()
     }
-}
-
-subprojects { project ->
 
     apply plugin: "io.spring.dependency-management"
     dependencyManagement {
@@ -22,14 +39,6 @@ subprojects { project ->
             mavenBom "com.github.peacetrue:peacetrue-dependencies:1.0.4-SNAPSHOT"
         }
     }
-
-    group "com.github.peacetrue.template"
-    version "1.0-SNAPSHOT"
-    description "模型项目模板"
-
-    apply plugin: "java"
-    apply plugin: "java-library"
-    sourceCompatibility = 1.8
 
     dependencies {
         compileOnly "org.projectlombok:lombok"

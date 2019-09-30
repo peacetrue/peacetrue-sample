@@ -1,4 +1,4 @@
-= 模型项目模板
+= 样章项目
 xiayx <xiayouxue@hotmail.com>
 v1.0, 2019-09-02: SNAPSHOT
 :doctype: docbook
@@ -10,5 +10,5 @@ v1.0, 2019-09-02: SNAPSHOT
 :testsourcedir: src/test/java
 :source-highlighter: highlightjs
 
-提供多模型结构和示例模块的CRUD实现，用于开发模型项目。
-点击查看 https://peacetrue.github.io/public/peacetrue-template-model-project/master/introduction.html[更多^]。
+聚合与 Peacetrue 相关的所有组件，提供一个完整的展示。
+点击查看 https://peacetrue.github.io/public/peacetrue-sample/master/introduction.html[更多^]。
