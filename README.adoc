@@ -12,3 +12,8 @@ v1.0, 2019-09-02: SNAPSHOT
 
 聚合与 Peacetrue 相关的所有组件，提供一个完整的展示。
 点击查看 https://peacetrue.github.io/public/peacetrue-sample/master/introduction.html[更多^]。
+
+== 版本说明
+* 1.0.0：jdk8、spring-boot-1.5.x
+* 1.1.0：jdk8+、spring-boot-1.5.x
+* 2.0.0：jdk8+、spring-boot-2.x.x
